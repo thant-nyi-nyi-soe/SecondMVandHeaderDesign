@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Header part
   const header = document.getElementById("headerPart");
   if (header) {
-    fetch("../header.html")
+    fetch("/header.html")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -31,5 +31,3 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch((error) => console.error("Error loading footer:", error));
   }
 });
-
-console.log('works');
