@@ -31,3 +31,5 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch((error) => console.error("Error loading footer:", error));
   }
 });
+
+console.log('works');
