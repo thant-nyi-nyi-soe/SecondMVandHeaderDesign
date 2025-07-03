@@ -1,0 +1,97 @@
+@charset "utf-8";
+html {
+  text-rendering: optimizeLegibility !important;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: #000;
+  background: transparent;
+  text-rendering: optimizeLegibility;
+}
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
+.tel {
+  pointer-events: none;
+}
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+  .tel {
+    pointer-events: auto;
+  }
+}
+/* ===============================
+Text align
+=============================== */
+.txt-left {
+  text-align: left;
+}
+.txt-center {
+  text-align: center;
+}
+.txt-right {
+  text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .txt-left-sp {
+    text-align: left;
+  }
+  .txt-center-sp {
+    text-align: center;
+  }
+  .txt-right-sp {
+    text-align: right;
+  }
+}
+/* ===============================
+Color
+=============================== */
+.main-color {
+  color: #000;
+}
+.sub-color {
+  color: #24140e;
+}
+.b-color {
+  color: #000;
+}
+.w-color {
+  color: #fff;
+}
+/* ===============================
+Background Color
+=============================== */
+.bg-main {
+  background: #900;
+}
+.bg-sub {
+  /* background: #000; */
+}
+.bg-b {
+  background: #000;
+}
+.bg-w {
+  background: #fff;
+}
+.bg-gray {
+  background: #f1f1f1;
+}
+
+/* ===============================
+
+=============================== */
+@media screen and (max-width: 768px) {
+}

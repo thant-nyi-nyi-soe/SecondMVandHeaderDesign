@@ -1,0 +1,317 @@
+@charset "utf-8";
+/* ===============================
+Top Page
+=============================== */
+
+
+@media screen and (max-width: 768px) {
+}
+
+
+/* ===============================
+Header
+================================*/
+.header {
+    display: flex;
+    height: 93px;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    padding-left: 70px;
+    padding-right: 97px;
+}
+
+.header-left {
+    flex: 1;
+    
+}
+.title {
+    display: flex;
+    align-items: center;
+}
+.globe-icon {
+    height: 27px;
+    width: 27px;
+    margin-right: 8px;
+}
+.company-name {
+    font-family: "Noto Serif";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.header-right a {
+    font-family: "Noto Serif";
+    font-size: 20px;
+    
+    background-color: transparent;
+    
+    border: none;
+    opacity: 0.7;
+}
+.home-button {
+    opacity: 1;
+}
+
+.tablet-menu-button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    height: 70px;
+
+    position: absolute;
+    top: 24.5px;
+    right: 30.5px;
+    z-index: 1;
+}
+
+/*=======================
+Background
+=======================*/
+.back-img {
+    margin-top: 93px;
+    background-image: url(/assets/images/beach_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+.container {
+    max-width: 876px;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+.container * {
+    font-family: "Noto Sans";
+}
+
+.body-title {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.body-paragraph {
+    font-size: 22px;
+    color: #FFFFFF;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 177px;
+    
+    line-height: 33px;
+    margin-bottom: 39px;
+}
+
+.option-bar { 
+    margin-top: 39px;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    border-radius: 10px;
+
+    background-color: #EAEAEA;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 60%, #4ebcd8 100%);
+}
+
+
+.location-button {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.bottom-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-icon {
+    height: 13.37px;
+    width: 13.37px;
+    margin-right: 6.8px;
+}
+.vertical-bar {
+    height: 54.88px;
+    width: 1px;
+    background-color: #B4C6EE;
+}
+.check-in-button {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}
+.check-out-button {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}
+.explore-button {
+    background-color: #4468E2;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    font-family: "Noto Serif";
+    font-size: 21px;
+    font-weight: bold;
+    padding: 17.5px 13px 17.5px 25px;
+
+}
+.tablet-explore-button-div {
+    display: flex; 
+    justify-content: center;
+    padding-top: 40px;
+}
+.tablet-explore-button {
+    display: none;
+    background-color: #4468E2;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    font-family: "Noto Serif";
+    font-size: 21px;
+    font-weight: bold;
+    height: 70px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-text {
+    font-family: "Noto Sans";
+    font-size: 16px;
+    opacity: 0.8;
+}
+.add-date-text {
+    font-family: "Noto Sans";
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+
+.exit-div {
+    height: 118px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    
+    padding-top: 24.5px;
+    padding-right: 30.5px;
+    z-index: 1;
+}
+.exit-button {
+  position: relative;
+}
+
+.exit-stick-1 {
+    position: absolute;
+    right: 28px;
+    top: 28px;
+}
+.exit-stick-2 {
+    position: absolute;
+    right: 28px;
+    top: 28px;
+}
+
+
+/*======================
+Tablet-menu-button pressed
+======================*/
+.tablet-body {
+    margin-top: 118px;
+    display: flex;
+    flex-direction: column;
+}
+.tablet-body a {
+    font-family: "Noto Serif";
+    font-size: 36px;
+    font-weight: 600;
+    border: none;
+    
+    display: flex;
+    justify-content: space-between;
+
+    padding: 27px 40.4px 66px 36px;
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .header {
+        height: 118px;
+        background-color: #EAEAEA;
+    }
+    .globe-icon {
+        height: 80px;
+        width: 80px;
+    }
+    .back-img {
+        margin-top: 118px;
+    }
+    .header-right {
+        display: none;
+    }
+    .tablet-menu-button {
+        display: block;
+    }
+    .body-title {
+        font-size: 46px;
+    }
+    .body-paragraph {
+        font-size: 30px;
+        max-width: 610px;
+        padding: 0 22px;
+    }
+    .option-bar {
+        padding: 18px 83px 20px 24px;
+        width: 654px;
+        margin: 0 auto;
+    }
+    .explore-button {
+        display: none;
+    }
+    .tablet-explore-button {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .option-bar {
+        flex-direction: column;
+        max-width: 350px;
+        padding: 0;
+    }
+    .option-bar button {
+        padding: 10px;
+    }
+    .vertical-bar {
+        height: 1px;
+        width: 320px;
+        margin: auto;
+    }
+    
+}
+
