@@ -81,7 +81,7 @@ Background
 =======================*/
 .back-img {
     margin-top: 93px;
-    background-image: url('/pixel_project_slick/assets/images/beach_background.png');
+    background-image: url('../images/beach_background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
