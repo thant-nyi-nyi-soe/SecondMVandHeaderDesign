@@ -128,16 +128,20 @@ Background
     border-radius: 10px;
 
     background-color: #EAEAEA;
-    backdrop-filter: blur(10px);
     background: linear-gradient(to right, #ffffff 0%, #ffffff 60%, #4ebcd8 100%);
 }
-
-
-.location-button {
+.option-bar * {
     font-size: 20px;
     border: none;
     background-color: transparent;
-    display: flex;
+}
+.option-bar button {
+}
+.option-bar a {
+    display: inline-block;
+}
+
+.location-button {
     flex-direction: column;
     text-align: center;
 }
@@ -147,35 +151,27 @@ Background
     justify-content: center;
 }
 .search-icon {
-    height: 13.37px;
-    width: 13.37px;
-    margin-right: 6.8px;
+    height: 13px;
+    width: 13px;
+    margin-right: 7px;
 }
 .vertical-bar {
-    height: 54.88px;
+    height: 55px;
     width: 1px;
     background-color: #B4C6EE;
 }
-.check-in-button {
-    font-size: 20px;
-    border: none;
-    background-color: transparent;
-}
-.check-out-button {
-    font-size: 20px;
-    border: none;
-    background-color: transparent;
+.top-line, .bottom-line {
+    max-width: 350px;
 }
 .explore-button {
-    background-color: #4468E2;
     color: white;
-    border-style: none;
-    border-radius: 10px;
+    background-color: #4468E2;
     font-family: "Noto Serif";
     font-size: 21px;
     font-weight: bold;
-    padding: 17.5px 13px 17.5px 25px;
-
+    border-style: none;
+    border-radius: 10px;
+    padding: 17px 13px 17px 25px;
 }
 .tablet-explore-button-div {
     display: flex; 
@@ -198,12 +194,10 @@ Background
 }
 
 .search-text {
-    font-family: "Noto Sans";
     font-size: 16px;
     opacity: 0.8;
 }
 .add-date-text {
-    font-family: "Noto Sans";
     font-size: 16px;
     opacity: 0.8;
 }
