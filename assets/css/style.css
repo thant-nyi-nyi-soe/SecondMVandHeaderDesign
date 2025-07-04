@@ -4,9 +4,6 @@ Top Page
 =============================== */
 
 
-@media screen and (max-width: 768px) {
-}
-
 
 /* ===============================
 Header
@@ -87,6 +84,10 @@ Background
     background-position: center;
     min-height: 100vh;
 }
+
+/*======================
+body
+========================*/
 .container {
     max-width: 876px;
     margin: 0 auto;
@@ -120,6 +121,10 @@ Background
     margin-bottom: 39px;
 }
 
+
+/*==========================
+Option-bar
+============================*/
 .option-bar { 
     margin-top: 39px;
     display: flex;
@@ -135,12 +140,6 @@ Background
     border: none;
     background-color: transparent;
 }
-.option-bar button {
-}
-.option-bar a {
-    display: inline-block;
-}
-
 .location-button {
     flex-direction: column;
     text-align: center;
@@ -161,7 +160,6 @@ Background
     background-color: #B4C6EE;
 }
 .top-line, .bottom-line {
-    max-width: 350px;
 }
 .explore-button {
     color: white;
@@ -202,7 +200,9 @@ Background
     opacity: 0.8;
 }
 
-
+/*======================
+Tablet-view-header
+======================*/
 .exit-div {
     height: 118px;
     position: fixed;
@@ -229,9 +229,8 @@ Background
     top: 28px;
 }
 
-
 /*======================
-Tablet-menu-button pressed
+Tablet-view-body
 ======================*/
 .tablet-body {
     margin-top: 118px;
@@ -281,7 +280,7 @@ Tablet-menu-button pressed
     }
     .option-bar {
         padding: 18px 83px 20px 24px;
-        width: 654px;
+        max-width: 654px;
         margin: 0 auto;
     }
     .explore-button {
@@ -292,20 +291,28 @@ Tablet-menu-button pressed
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .container {
+        top: 20%;
+    }
     .option-bar {
         flex-direction: column;
         max-width: 350px;
         padding: 0;
+    }
+    .check-in-button, .check-out-button {
+        display: flex;
+        flex-direction: column;
     }
     .option-bar button {
         padding: 10px;
     }
     .vertical-bar {
         height: 1px;
-        width: 320px;
+        width: 90%;
         margin: auto;
     }
+    
     
 }
 
