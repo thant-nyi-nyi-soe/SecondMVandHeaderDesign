@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const main = document.querySelector('.main');
 
   hamburger.addEventListener("click", () => {
-    console.log('works');
+    
     hamburger.classList.toggle("active");
     menu.classList.toggle("show");
 

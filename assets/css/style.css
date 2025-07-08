@@ -299,13 +299,13 @@ Tablet-view-body
         justify-content: center;
         gap: 3px;
     }
+
     
     .container {
         top: 20%;
     }
     .body-title {
         font-size: 50px;
-        transition: ease
     }
     .body-paragraph {
         font-size: 22px;
@@ -339,6 +339,8 @@ Tablet-view-body
         width: 90%;
         margin: auto;
     }
+
+    
     .active .first-bar {
         transform: translate(0, 3px) rotate(45deg);
         transition: transform 0.2s ease;
