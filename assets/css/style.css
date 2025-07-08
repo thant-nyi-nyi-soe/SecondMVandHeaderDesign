@@ -26,8 +26,8 @@ Header
 .header-left {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
-
 .globe-icon {
     height: 27px;
     width: 27px;
@@ -48,19 +48,29 @@ Header
     display: flex;
     gap: 40px;
 }
-.header-right li {
+.menu li {
     font-family: "Noto Serif";
     font-size: 20px;
     opacity: 0.7;
+    cursor: pointer;
+}
+.menu li img {
+    display: none;
 }
 .tablet-menu-button {
     display: none;
    
 }
+.tablet-menu-button:hover {
+    cursor: pointer;
+}
 .tablet-menu-button span {
     height: 3px;
     width: 100%;
     background-color: black;
+}
+.hidden {
+    display: none;
 }
 
 /*=======================
@@ -73,11 +83,15 @@ Background
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
+    object-fit: cover;
 }
 
 /*======================
 body
 ========================*/
+body {
+    font-family: "Noto Sans";
+}
 .container {
     max-width: 768px;
     margin: 0 auto;
@@ -86,10 +100,6 @@ body
     left: 0;
     right: 0;
 }
-.container * {
-    font-family: "Noto Sans";
-}
-
 .body-title {
     text-align: center;
     font-size: 50px;
@@ -104,7 +114,7 @@ body
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 177px;
+    padding: 0 50px;
     
     line-height: 33px;
     margin-bottom: 39px;
@@ -123,6 +133,9 @@ Option-bar
 
     background-color: #EAEAEA;
     background: linear-gradient(to right, #ffffff 0%, #ffffff 60%, #4ebcd8 100%);
+}
+.option-bar a {
+    cursor: pointer;
 }
 .option-bar * {
     font-size: 20px;
@@ -159,11 +172,13 @@ Option-bar
     border-style: none;
     border-radius: 10px;
     padding: 17px 13px 17px 25px;
+    cursor: pointer;
 }
 .tablet-explore-button-div {
     display: flex; 
     justify-content: center;
     padding-top: 40px;
+    
 }
 .tablet-explore-button {
     display: none;
@@ -178,6 +193,7 @@ Option-bar
     width: 300px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .search-text {
@@ -265,6 +281,7 @@ Tablet-view-body
         justify-content: center;
         gap: 3px;
     }
+    
     .body-title {
         font-size: 50px;
         transition: ease
@@ -304,7 +321,37 @@ Tablet-view-body
         width: 90%;
         margin: auto;
     }
-    
-    
+    .active .first-bar {
+        transform: translate(0, 3px) rotate(45deg);
+        transition: transform 0.2s ease;
+    }
+    .active .second-bar {
+        display: none;
+    }
+    .active .third-bar {
+        transform: translate(0, -3px) rotate(-45deg);
+        transition: transform 0.2s ease;
+    }
+    .show {
+        position: absolute;
+        top: 77px;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+
+        width: 100%;
+    }
+   .show li {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 36px;
+        width: 100%;
+   }
+   .show li img {
+    display: unset;
+   }
 }
 
