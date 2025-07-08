@@ -39,7 +39,6 @@ Header
     font-weight: bold;
 }
 
-
 .header-right {
     display: flex;
     gap: 20px;
@@ -69,8 +68,26 @@ Header
     width: 100%;
     background-color: black;
 }
-.hidden {
-    display: none;
+.show {
+    position: absolute;
+    top: 77px;
+    left: 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+
+    width: 100%;
+}
+.show li {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 36px;
+    width: 100%;
+}
+    .show li img {
+    display: unset;
 }
 
 /*=======================
@@ -89,6 +106,9 @@ Background
 /*======================
 body
 ========================*/
+.hidden {
+    display: none;
+}
 body {
     font-family: "Noto Sans";
 }
@@ -160,8 +180,6 @@ Option-bar
     height: 55px;
     width: 1px;
     background-color: #B4C6EE;
-}
-.top-line, .bottom-line {
 }
 .explore-button {
     color: white;
@@ -264,8 +282,8 @@ Tablet-view-body
         background-color: #EAEAEA;
     }
     .globe-icon {
-        height: 40px;
-        width: 40px;
+        height: 27px;
+        width: 27px;
     }
     .back-img {
         margin-top: 77px;
@@ -282,6 +300,9 @@ Tablet-view-body
         gap: 3px;
     }
     
+    .container {
+        top: 20%;
+    }
     .body-title {
         font-size: 50px;
         transition: ease
@@ -305,10 +326,7 @@ Tablet-view-body
     .tablet-explore-button {
         display: flex;
     }
-    .container {
-        top: 20%;
-    }
-
+    
     .check-in-button, .check-out-button {
         display: flex;
         flex-direction: column;
@@ -333,25 +351,10 @@ Tablet-view-body
         transition: transform 0.2s ease;
     }
     .show {
-        position: absolute;
-        top: 77px;
-        left: 0;
-
         display: flex;
-        flex-direction: column;
-        align-items: start;
-        gap: 30px;
-
-        width: 100%;
     }
-   .show li {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 36px;
-        width: 100%;
-   }
-   .show li img {
-    display: unset;
-   }
+   
 }
+
+
 
