@@ -243,6 +243,7 @@ Tablet-view-body
 
 @media screen and (max-width: 768px) {
   .header {
+    background-color: #EAEAEA;
     height: 77px;
   }
   .globe-icon {
