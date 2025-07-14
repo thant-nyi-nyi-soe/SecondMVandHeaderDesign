@@ -83,6 +83,7 @@ body {
 }
 .container {
   max-width: 768px;
+  padding: 0 20px;
   margin: 0 auto;
   position: absolute;
   top: 30%;
@@ -274,6 +275,7 @@ Tablet-view-body
     max-width: 610px;
     padding: 0 22px;
   }
+  
   .option-bar {
     padding: 18px 83px 20px 24px;
     max-width: 654px;
