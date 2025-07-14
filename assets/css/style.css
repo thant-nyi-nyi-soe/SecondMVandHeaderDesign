@@ -71,6 +71,7 @@ Background
   background-position: center;
   min-height: calc(100vh - 93px); /* Adjust for header height */
   object-fit: cover;
+  filter: brightness(0.8);
 }
 
 /*======================
