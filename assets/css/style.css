@@ -11,7 +11,7 @@ Header
   height: 93px;
   align-items: center;
   justify-content: space-between;
-  
+
   max-width: 1320px; /*vertically centered*/
   margin: 0 auto;
 
@@ -248,7 +248,7 @@ Tablet-view-body
     height: 27px;
     width: 27px;
   }
-  
+
   .menu {
     display: none;
   }
@@ -313,27 +313,31 @@ Tablet-view-body
     transition: transform 0.2s ease;
   }
   .hidden {
-  display: none;
-}
+    display: none;
+  }
   .show {
     display: flex;
 
+    
     position: absolute;
     top: 77px;
     left: 0;
-
+    width: 100%;
+    
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 30px;
-
-    width: 100%;
+    
+    opacity: 1;
   }
   .show li {
     display: flex;
     justify-content: space-between;
     padding: 20px 36px;
     width: 100%;
+    font-family: "Noto Sans JP";
+    opacity: 1;
   }
   .show li img {
     display: unset;
