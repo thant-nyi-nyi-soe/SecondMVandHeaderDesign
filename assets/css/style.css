@@ -8,14 +8,13 @@ Header
 ================================*/
 .header {
   display: flex;
-  height: 93px;
   align-items: center;
   justify-content: space-between;
 
   max-width: 1320px; /*vertically centered*/
   margin: 0 auto;
 
-  padding: 0 40px;
+  padding: 36px 40px;
   background-color: white;
 }
 .header-left {
@@ -71,7 +70,7 @@ Background
   background-position: center;
   min-height: calc(100vh - 93px); /* Adjust for header height */
   object-fit: cover;
-  filter: brightness(0.8);
+  position: relative;
 }
 
 /*======================
@@ -82,13 +81,12 @@ body {
   font-family: "Noto Sans";
 }
 .container {
-  max-width: 768px;
   padding: 0 20px;
-  margin: 0 auto;
+
   position: absolute;
-  top: 30%;
-  left: 0;
-  right: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .body-title {
   text-align: center;
@@ -194,17 +192,7 @@ Option-bar
 /*======================
 Tablet-view-header
 ======================*/
-.exit-div {
-  height: 118px;
-  position: fixed;
-  right: 0;
-  top: 0;
-  display: flex;
 
-  padding-top: 24.5px;
-  padding-right: 30.5px;
-  z-index: 1;
-}
 .exit-button {
   position: relative;
 }
@@ -272,7 +260,7 @@ Tablet-view-body
   }
   .body-paragraph {
     font-size: 22px;
-    max-width: 610px;
+    max-width: 555px;
     padding: 0 22px;
   }
   
