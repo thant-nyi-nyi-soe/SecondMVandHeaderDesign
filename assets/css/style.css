@@ -6,13 +6,23 @@ Top Page
 /* ===============================
 Header
 ================================*/
+/* * {
+  outline: 2px solid red !important;
+} */
+ * {
+  box-sizing: border-box;
+ }
+html, body {
+  width: 100%; /* Ensure html and body take full width */
+  overflow-x: hidden; /* Prevent horizontal scrolling due to overflow */
+}
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  max-width: 1320px; /*vertically centered*/
-  margin: 0 auto;
+  max-width: 1320px; 
+  margin: 0 auto; /*vertically centered*/
 
   padding: 36px 40px;
   background-color: white;
@@ -68,9 +78,11 @@ Background
   background-image: url("../images/beach_background.png");
   background-size: cover;
   background-position: center;
-  min-height: calc(100vh - 93px); /* Adjust for header height */
-  object-fit: cover;
-  position: relative;
+  min-height: calc(100vh - 99px);
+
+  position: relative;  
+  display: flex;
+  align-items: center;
 }
 
 /*======================
@@ -82,30 +94,29 @@ body {
 }
 .container {
   padding: 0 20px;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 916px;
+  width: 100%;
+  margin: 0 auto; 
 }
 .body-title {
   text-align: center;
   font-size: 50px;
-  color: white;
   font-weight: 500;
-  margin-bottom: 35px;
+  color: #ffffff;
+  padding-bottom: 36px;
+  width: 100%;
 }
 .body-paragraph {
   font-size: 22px;
+  font-weight: 400;
   color: #ffffff;
+  margin: 0 auto;
 
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 50px;
+  padding: 0 150px 36px 150px;
 
   line-height: 33px;
-  margin-bottom: 39px;
+  width: 100%;
 }
 
 /*==========================
@@ -115,23 +126,26 @@ Option-bar
   margin-top: 39px;
   display: flex;
   justify-content: space-between;
-  padding: 13px;
+  padding: 13px 24px;;
   border-radius: 10px;
-
+  
   background-color: #eaeaea;
   background: linear-gradient(to right, #ffffff 0%, #ffffff 60%, #4ebcd8 100%);
+  margin: 0 auto;
 }
 .option-bar a {
   cursor: pointer;
 }
 .option-bar * {
   font-size: 20px;
+  font-weight: 500;
   border: none;
   background-color: transparent;
 }
 .location-button {
+  display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
 }
 .bottom-line {
   display: flex;
@@ -156,56 +170,36 @@ Option-bar
   font-weight: bold;
   border-style: none;
   border-radius: 10px;
-  padding: 17px 13px 17px 25px;
+  padding: 17px 13px;
   cursor: pointer;
 }
-.tablet-explore-button-div {
-  display: flex;
-  justify-content: center;
-  padding-top: 40px;
-}
 .tablet-explore-button {
+  max-width: 300px;
+  width: 100%;  
+  margin: 40px auto 0;
+  padding: 21px;
+
   display: none;
   background-color: #4468e2;
   color: white;
   border-style: none;
   border-radius: 10px;
+
   font-family: "Noto Serif";
   font-size: 21px;
   font-weight: bold;
-  height: 70px;
-  width: 300px;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   cursor: pointer;
 }
-
 .search-text {
   font-size: 16px;
-  opacity: 0.8;
+  font-weight: 400;
+  opacity: 0.6;
 }
 .add-date-text {
   font-size: 16px;
-  opacity: 0.8;
-}
-
-/*======================
-Tablet-view-header
-======================*/
-
-.exit-button {
-  position: relative;
-}
-
-.exit-stick-1 {
-  position: absolute;
-  right: 28px;
-  top: 28px;
-}
-.exit-stick-2 {
-  position: absolute;
-  right: 28px;
-  top: 28px;
+  font-weight: 400;
+  opacity: 0.6;
 }
 
 /*======================
@@ -230,7 +224,31 @@ Tablet-view-body
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+
+  .container {
+    padding: 0 57px;
+  }
+  .explore-button {
+    display: none;
+  }
+  .tablet-explore-button {
+    display: block;
+  }
+  .option-bar {
+    max-width: 694px;
+    width: 100%;
+  }
+   .body-paragraph {
+    font-size: 22px;
+    padding: 0px 38px 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .back-img {
+    min-height: calc(100vh - 77px);
+  }
   .header {
     background-color: #EAEAEA;
     height: 77px;
@@ -239,50 +257,41 @@ Tablet-view-body
     height: 27px;
     width: 27px;
   }
-
-  .menu {
-    display: none;
-  }
   .tablet-menu-button {
     display: flex;
+    flex-direction: column;
     height: 20px;
     width: 30px;
-    flex-direction: column;
     justify-content: center;
     gap: 3px;
   }
-
-  .container {
-    top: 20%;
+   .container {
+    max-width: 694px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .menu {
+    display: none;
   }
   .body-title {
     font-size: 50px;
+    padding-bottom: 36px;
   }
   .body-paragraph {
     font-size: 22px;
-    max-width: 555px;
-    padding: 0 22px;
+    padding: 0 16x 110px 16px;
   }
   
+  .check-in-button,
+  .check-out-button {
+  }
   .option-bar {
     padding: 18px 83px 20px 24px;
-    max-width: 654px;
     margin: 0 auto;
     flex-direction: column;
     max-width: 350px;
     padding: 0;
-  }
-  .explore-button {
-    display: none;
-  }
-  .tablet-explore-button {
-    display: flex;
-  }
-
-  .check-in-button,
-  .check-out-button {
-    display: flex;
-    flex-direction: column;
   }
   .option-bar button {
     padding: 10px;
@@ -292,7 +301,6 @@ Tablet-view-body
     width: 90%;
     margin: auto;
   }
-
   .active .first-bar {
     transform: translate(0, 3px) rotate(45deg);
     transition: transform 0.2s ease;
@@ -310,7 +318,6 @@ Tablet-view-body
   .show {
     display: flex;
 
-    
     position: absolute;
     top: 77px;
     left: 0;
@@ -335,3 +342,4 @@ Tablet-view-body
     display: unset;
   }
 }
+
