@@ -6,16 +6,8 @@ Top Page
 /* ===============================
 Header
 ================================*/
-/* * {
-  outline: 2px solid red !important;
-} */
- * {
-  box-sizing: border-box;
- }
-html, body {
-  width: 100%; /* Ensure html and body take full width */
-  overflow-x: hidden; /* Prevent horizontal scrolling due to overflow */
-}
+
+
 .header {
   display: flex;
   align-items: center;
@@ -238,6 +230,7 @@ Tablet-view-body
   .option-bar {
     max-width: 694px;
     width: 100%;
+    padding: 13px 83px 20px 24px;
   }
    .body-paragraph {
     font-size: 22px;
