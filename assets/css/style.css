@@ -34,6 +34,10 @@ Header
   font-size: 20px;
   font-weight: bold;
 }
+.header-right a::after {
+  content: "/assets/images/right_arrow.png";
+
+}
 .header-right {
   display: flex;
   gap: 20px;
